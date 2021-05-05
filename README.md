@@ -1,3 +1,89 @@
 # LoveLetters
 
 A little NLP exercise in finding most frequent words in Love Letters dataset
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js" integrity="sha384-YF85VygJKMVnHE+lLv2AM93Vbstr0yo2TbIu5v8se5Rq3UQAUmcuh4aaJwNlpKwa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="8a8bf7b3-e8fb-4a78-a59b-aa7d82c6b203" data-root-id="1038"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1174">
+          {"b14073b1-b7c7-498d-bcca-e95654b15d9e":{"defs":[],"roots":{"references":[{"attributes":{},"id":"1043","type":"DataRange1d"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9]},"id":"1092","type":"FixedTicker"},{"attributes":{"below":[{"id":"1049"}],"center":[{"id":"1052"},{"id":"1056"},{"id":"1088"}],"height":400,"left":[{"id":"1053"}],"output_backend":"webgl","renderers":[{"id":"1077"}],"sizing_mode":"fixed","title":{"id":"1039"},"toolbar":{"id":"1064"},"x_range":{"id":"1041"},"x_scale":{"id":"1045"},"y_range":{"id":"1043"},"y_scale":{"id":"1047"}},"id":"1038","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1080","type":"AllLabels"},{"attributes":{"label":{"value":" 0"},"renderers":[{"id":"1077"}]},"id":"1089","type":"LegendItem"},{"attributes":{},"id":"1082","type":"BasicTickFormatter"},{"attributes":{"code":"\n                                    var labels = {0: 'love', 1: 'will', 2: 'am', 3: 'only', 4: 'can', 5: 'heart', 6: 'know', 7: 'may', 8: 'feel', 9: 'like'};\n                                    return labels[tick];\n                                    "},"id":"1071","type":"FuncTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"0"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1073"}}},"id":"1076","type":"VBar"},{"attributes":{},"id":"1083","type":"AllLabels"},{"attributes":{"data_source":{"id":"1037"},"glyph":{"id":"1075"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1076"},"view":{"id":"1078"}},"id":"1077","type":"GlyphRenderer"},{"attributes":{"axis_label":"Word","formatter":{"id":"1071"},"major_label_policy":{"id":"1080"},"ticker":{"id":"1092"}},"id":"1049","type":"LinearAxis"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"1063","type":"BoxAnnotation"},{"attributes":{"text":"Frequency Distribution"},"id":"1039","type":"Title"},{"attributes":{},"id":"1041","type":"DataRange1d"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"top":{"field":"0"},"width":{"value":0.7},"x":{"field":"__x__values","transform":{"id":"1073"}}},"id":"1075","type":"VBar"},{"attributes":{"range":{"id":"1041"}},"id":"1073","type":"Dodge"},{"attributes":{"axis":{"id":"1049"},"ticker":null},"id":"1052","type":"Grid"},{"attributes":{},"id":"1045","type":"LinearScale"},{"attributes":{},"id":"1047","type":"LinearScale"},{"attributes":{},"id":"1058","type":"WheelZoomTool"},{"attributes":{"axis_label":"count","formatter":{"id":"1082"},"major_label_policy":{"id":"1083"},"ticker":{"id":"1054"}},"id":"1053","type":"LinearAxis"},{"attributes":{"axis":{"id":"1053"},"dimension":1,"ticker":null},"id":"1056","type":"Grid"},{"attributes":{},"id":"1085","type":"Selection"},{"attributes":{},"id":"1054","type":"BasicTicker"},{"attributes":{"active_multi":null,"active_scroll":{"id":"1058"},"tools":[{"id":"1057"},{"id":"1058"},{"id":"1059"},{"id":"1060"},{"id":"1061"},{"id":"1062"},{"id":"1090"}]},"id":"1064","type":"Toolbar"},{"attributes":{},"id":"1086","type":"UnionRenderers"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"1077"}],"tooltips":[["Word","@__x__values_original"],["0","@{0}"]]},"id":"1090","type":"HoverTool"},{"attributes":{},"id":"1062","type":"HelpTool"},{"attributes":{"data":{"0":[168,99,95,69,64,62,59,43,39,39],"__x__values":[0,1,2,3,4,5,6,7,8,9],"__x__values_original":["love","will","am","only","can","heart","know","may","feel","like"]},"selected":{"id":"1085"},"selection_policy":{"id":"1086"}},"id":"1037","type":"ColumnDataSource"},{"attributes":{},"id":"1057","type":"PanTool"},{"attributes":{"click_policy":"hide","items":[{"id":"1089"}]},"id":"1088","type":"Legend"},{"attributes":{"overlay":{"id":"1063"}},"id":"1059","type":"BoxZoomTool"},{"attributes":{},"id":"1060","type":"SaveTool"},{"attributes":{},"id":"1061","type":"ResetTool"},{"attributes":{"source":{"id":"1037"}},"id":"1078","type":"CDSView"}],"root_ids":["1038"]},"title":"Bokeh Application","version":"2.3.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1174').textContent;
+                  var render_items = [{"docid":"b14073b1-b7c7-498d-bcca-e95654b15d9e","root_ids":["1038"],"roots":{"1038":"8a8bf7b3-e8fb-4a78-a59b-aa7d82c6b203"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
